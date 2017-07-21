@@ -1,13 +1,14 @@
 html body {
-	background: #1c92d2;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	color: #555;
-
+	background: #3494E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Lato', sans-serif;
 
 }
 
-
+html body a {
+	color:#000080;
+}
 div #container {
 	margin-top: 120px;
 
@@ -19,10 +20,11 @@ div #container {
 	background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	position: fixed;
-	border: 3px solid #555;
+	margin:0;
 	width: 100%;
 	height: 120px;
 	padding-top: 5px;
+	border-bottom: solid 3px #000080;
 
 
 }
@@ -33,7 +35,7 @@ div #container {
 	margin: 0 auto;
 	font-size: 20pt;
 	padding-top: 1.6em;
-	
+	text-shadow: 2px 2px 1px rgba(75, 75, 75, .5);
 }
 
 #navvy > nav li a {
@@ -69,14 +71,15 @@ div .jumbotron h1 {
 }
 
 div .jumbotron p {
-	color: #EEE;
-	text-shadow: 4px 4px 2px rgba(75, 75, 75, 1);
+	color: #000080;
+	text-shadow: 2px 2px 1px rgba(75, 75, 75, .5);
 }
 
 
-h3 a:hover {
-	border-left: 4px solid red;
+h3 a:hover,  {
+	border-left: 4px solid #000080;
 	padding-left: 10px;
+	color: #104e8b;
 }
 
 ul h4 {
@@ -141,5 +144,15 @@ div .footer {
 	margin-bottom: 10px;
 }
 
+input, textarea {
+	width: 50%;
+	margin-left: 25%;
+	
+}
+
+#form form {
+ 	
+ 	width: 100%;
+}
 
 

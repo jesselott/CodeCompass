@@ -4,13 +4,14 @@
 	<title>Get After It!</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/mycss.css">
 	<link rel="stylesheet" type="text/css" href="assets\css\lib\font-awesome-4.7.0\css\font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
 	<base target="_blank">
 </head>
 <body>
-<div id="navvy">
+	<div id="navvy">
 		<nav class="navbar navbar-default navvy">
-		<div class="container">
+			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -35,18 +36,18 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#">About</a></li>						
 						<li><a href="#">Contact</a></li>					
-											
+
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
-		</div>
+	</div>
 
 	<div id="container" class="container">		
 
 		<div class="jumbotron">
 			<h1>Your CodeCompass() <i class="fa fa-compass" aria-hidden="true"></i></h1>
-			<p><em>--Guidance to Navigate the Treacherous Journey of Getting Started in Software Development.</em></p>
+			<p><em>-- Guidance to navigate your treacherous, yet rewarding journey of becoming a Software Developer.</em></p>
 		</div>
 		
 		<div class="why no-bullets">
@@ -62,7 +63,8 @@
 		</div>
 
 		<div class="direction no-bullets">
-			<h2><i class="fa fa-arrow-right" aria-hidden="true"></i> A Bit of Direction </h2>
+			<h2><a name="dirLink" id="dirLink"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> A Bit of Direction</a></h2>
+			
 			<ul>
 				<h4>From the Soapbox</h4>
 				<ul>
@@ -147,35 +149,42 @@
 			</ul>
 		</div>
 		<div class="contact-form">
+
 			<h2><i class="fa fa-envelope" aria-hidden="true"></i> Shoot me an Email! </h2>
-			<form>
-				<ul>
+			<div id="form">
+				<form>
+					<ul>
 
-
-					<li><input type="email" name="email" placeholder="Duke@YoJoe.com"></li>
-					<li><textarea rows="5" cols="30" maxlength="25" placeholder="Your Message Goes Here"></textarea></li>
-				<input type="submit" name="email-btn" class="btn btn-primary btn-lg" >
-				</ul>
-			</form>
+						<label for="email">Your Email</label>
+						<li><input type="email" name="email" id="email" placeholder="Duke@YoJoe.com"></li>
+						<label for="msg">Message</label>
+						<li><textarea id="msg" rows="5" cols="30" maxlength="25" placeholder="Your Message Goes Here"></textarea></li>
+						<input type="submit" name="email-btn" class="btn btn-primary btn-lg" >
+					</ul>
+				</form>
+			</div>
 		</div>
 
 		<div class="check-out">
-			<h2><i class="fa fa-check" aria-hidden="true"></i> Check Me Out! </h2>
-			<ul>
-				<li><a href="https://www.facebook.com/profile.php?id=1602653214"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-				<li><a href="https://github.com/jesselott"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/jelott/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-				<li><a href="https://www.freecodecamp.org/jesselott"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
+			<h2><i class="fa fa-check" aria-hidden="true"></i> Check Me Out!</h2>
+			<div id="form">
 				<ul>
-				</div>
-				<div class="footer">
-					<footer>
-						7/2017 - This website was created by Jesse Lott with Sublime Text and a lot of <i class="fa fa-heart"></i>. Feel free to connect with me at any time, for any reason!
-					</footer>
-				</div>
+					<li><a href="https://www.facebook.com/profile.php?id=1602653214"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/jesselott"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/jelott/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.freecodecamp.org/jesselott"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
+				</ul>
 			</div>
-			<script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
-			<script type="text/javascript" src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="assets/js/myjs.js"></script>
-		</body>
-		</html>
+		</div>
+		<div class="footer">
+			<footer>
+				7/2017 - This website was created by Jesse Lott with Sublime Text and a lot of <i class="fa fa-heart"></i>. Feel free to connect with me at any time, for any reason!
+			</footer>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/myjs.js"></script>
+</body>
+</html>
