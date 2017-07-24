@@ -155,4 +155,10 @@ input, textarea {
  	width: 100%;
 }
 
+.bolder {
+	font-weight: bolder;
+	color: #bada55;
+	text-shadow: 2px 2px 1px rgba(75, 75, 75, .5);
+}
+
 
