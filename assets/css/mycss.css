@@ -193,8 +193,12 @@ input, textarea {
 	z-index: -1;
 }
 
-.direction h4, .direction h5{
-	color: #bada55;
+.direction h4 {
+	color: #bada55 !important;
+}
+
+.direction h5 {
+	color: #63b763;
 }
 
 .direction a {
