@@ -20,7 +20,7 @@ $('#contact-form').submit(function(e){
 	message = document.getElementById('msg');
 
 	if (!name.value || !email.value || !message.value)  
-		alertify.error('Please check your entries')
+		alertify.error('Please check your entries');
 	
 	else {
 
@@ -28,13 +28,13 @@ $('#contact-form').submit(function(e){
 			url: "https://formspree.io/jesse.e.lott@outlook.com",
 			method: "POST",
 			data: $(this).serialize(), 
-			datatype: "json"
+			datatype: "json";
 
 		});
 
-		e.preventDefault()
-		$(this).get(0).reset()
-		alertify.success('Message Sent')
+		e.preventDefault();
+		$(this).get(0).reset();
+		alertify.success('Message Sent');
 	}
 
 });
