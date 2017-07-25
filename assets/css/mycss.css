@@ -1,7 +1,7 @@
 html body{
 	background: #3494E6;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to right, red, white, blue) !important;  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, red, white, blue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-family: 'Lato', sans-serif;
 
 }
@@ -16,22 +16,42 @@ div #container {
 
 #navvy > nav {
 
-	background: #3494E6;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/*background: #3494E6;  /* fallback for old browsers */
+	/*background: -webkit-linear-gradient(to left, red, white, blue) !important;  /* Chrome 10-25, Safari 5.1-6 */
+	/*background: linear-gradient(to left, red, white, blue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: url("http://res.cloudinary.com/lzvrnp4rc/image/upload/c_scale,h_120,w_584/v1500951337/croppedflag_oiklrt.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	position: fixed;
 	margin:0;
 	width: 100%;
 	height: 120px;
 	padding-top: 5px;
 	border-bottom: solid 3px #000080;
+	z-index: 1;
 
 
 }
 
+#vets {
+	background-image: url("https://cdn.shopify.com/s/files/1/0748/6361/products/Subdued_American_Flag_Tailgate_1024x1024.jpg?v=1451762711");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 20px;
+}
+
+#vets h2 a {
+	color: white;
+}
+
+#vets a {
+	color: #bada55;
+}
+
 #navvy > nav a {
 
-	color: black;
+	color: #000080;
 	margin: 0 auto;
 	font-size: 20pt;
 	padding-top: 1.6em;
@@ -40,7 +60,7 @@ div #container {
 
 #navvy > nav li a {
 
-	color: black;
+	color: #000080;
 	padding-top: 55px;
 	font-size: 11pt;
 	
@@ -55,10 +75,9 @@ div #container {
 div .jumbotron {
 	background-image: url("https://www.businesswriters.nl/wp-content/uploads/2016/05/loopbaanbegeleiding.jpg");
 	border: 3px solid #555;
-	background-size: cover;
-	background-position: ;
+	background-size: cover;	
 	background-repeat: no-repeat;
-	height: 475px;
+	height: 800px;
 	color: #222;
 	margin-bottom: 0;
 	margin-top: 120px;
@@ -158,16 +177,57 @@ input, textarea {
 
 #form form {
  	
+ 	margin-left: 15em;
  	width: 100%;
 }
 
 .bolder {
 	font-weight: bolder;
-	color: #bada55;
+	
 	text-shadow: 2px 2px 1px rgba(75, 75, 75, .5);
 }
 .contact-form {
 	padding-bottom: 110px;
 }
 
+.direction{
+	background-image: url("http://www.land-navigation.com/images/two-hand-hold-the-lensatic-.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	border-radius: 20px;
+	padding: 20px;
+	background-blend-mode: lighten !important;
+	
+}
 
+#fade {
+	background: rgba(0,0,0,.2) !important;
+	
+	padding: 25px;
+	border-radius: 20px;
+	z-index: -1;
+}
+
+.direction h4, .direction h5{
+	color: #bada55;
+}
+
+.direction a {
+	color: white;
+}
+
+#about {
+	background-image: url("http://res.cloudinary.com/lzvrnp4rc/image/upload/v1489940796/chute_bl6ccm.jpg") !important;
+	
+	padding: 25px;
+	background-position: 50% 75%;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	color: navy-blue;
+	
+}
+
+#about {
+
+}
