@@ -188,15 +188,16 @@
 
 			<h2><a><i class="fa fa-envelope" id="contact" aria-hidden="true"></i> Send Me a Message!</a></h2>
 			<div id="form">
-				<form>
+				<form action="https://formspree.io/your@email.com"
+      			method="POST">
 					<ul>
 						<label for="yourName">Your Name </label>
 						<li><input type="text" name="yourName" id="yourName" placeholder="1SG Hauser"></li>
 						<label for="email">Your Email</label>
-						<li><input type="email" name="email" id="email" placeholder="Duke@yojoe.gi.mil"></li>
+						<li><input type="email" name="_replyto"" id="email" placeholder="Duke@yojoe.gi.mil"></li>
 						<label for="msg">Message</label>
 						<li><textarea id="msg" rows="5" cols="30" maxlength="25" placeholder="Your Message Goes Here"></textarea></li>
-						<input type="submit" name="email-btn" class="btn btn-primary btn-lg" >
+						<input type="submit" value="Send" name="email-btn" class="btn btn-primary btn-lg" >
 					</ul>
 				</form>
 			</div>
