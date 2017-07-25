@@ -16,8 +16,8 @@ $(document).ready(function(){
 $('contact-form').submit(function(e){
 
 	var name = document.getElementById('yourName'),
-	var email = document.getElementById('email'),
-	var message = document.getElementById('msg');
+	email = document.getElementById('email'),
+	message = document.getElementById('msg');
 
 	if (!name.value || !email.value || !message.value)  
 		alertify.error('Please check your entries')
