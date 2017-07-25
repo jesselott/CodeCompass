@@ -73,7 +73,8 @@ div .jumbotron h1 {
 }
 
 div .jumbotron p {
-	color: #000080;
+	color: black;
+	font-weight: bolder;
 	text-shadow: 2px 2px 1px rgba(75, 75, 75, .5);
 }
 
@@ -211,7 +212,12 @@ input, textarea {
 	
 }
 
-#about {
+#about h5 {
+	color: #000080;
+}
+
+#about p{
+	font-weight: bolder;
 
 }
 
