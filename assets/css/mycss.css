@@ -33,25 +33,10 @@ div #container {
 
 }
 
-#vets {
-	background-image: url("https://cdn.shopify.com/s/files/1/0748/6361/products/Subdued_American_Flag_Tailgate_1024x1024.jpg?v=1451762711");
-	background-size: cover;
-	background-repeat: no-repeat;
-	color: white;
-	padding: 20px;
-}
-
-#vets h2 a {
-	color: white;
-}
-
-#vets a {
-	color: #bada55;
-}
-
 #navvy > nav a {
 
-	color: #000080;
+	color: black;
+	font-weight: bold;
 	margin: 0 auto;
 	font-size: 20pt;
 	padding-top: 1.6em;
@@ -60,16 +45,14 @@ div #container {
 
 #navvy > nav li a {
 
-	color: #000080;
+	color: black;
 	padding-top: 55px;
 	font-size: 11pt;
+	font-weight: bold;
 	
 }
 
-#navvy > nav a:hover {
 
-	background-color: light-blue;
-}
 
 
 div .jumbotron {
@@ -230,4 +213,20 @@ input, textarea {
 
 #about {
 
+}
+
+#vets {
+	background-image: url("https://cdn.shopify.com/s/files/1/0748/6361/products/Subdued_American_Flag_Tailgate_1024x1024.jpg?v=1451762711");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 20px;
+}
+
+#vets h2 a {
+	color: white;
+}
+
+#vets a {
+	color: #bada55;
 }
