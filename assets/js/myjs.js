@@ -13,7 +13,7 @@ $(document).ready(function(){
 	});
 });
 
-$('contact-form').submit(function(e){
+$('#contact-form').submit(function(e){
 
 	var name = document.getElementById('yourName'),
 	email = document.getElementById('email'),
