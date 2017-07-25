@@ -17,10 +17,10 @@ $('#contact-form').submit(function(e){
 
 	var name = document.getElementById('yourName'),
 	email = document.getElementById('email'),
-	message = document.getElementById('msg');
+	message = document.getElementById('msg')
 
 	if (!name.value || !email.value || !message.value)  
-		alertify.error('Please check your entries');
+		alertify.error('Please check your entries')
 	
 	else {
 
@@ -32,9 +32,9 @@ $('#contact-form').submit(function(e){
 
 		});
 
-		e.preventDefault();
-		$(this).get(0).reset();
-		alertify.success('Message Sent');
+		e.preventDefault()
+		$(this).get(0).reset()
+		alertify.success('Message Sent')
 	}
 
 });
