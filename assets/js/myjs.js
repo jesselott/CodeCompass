@@ -28,7 +28,7 @@ $('#contact-form').submit(function(e){
 			url: "https://formspree.io/jesse.e.lott@outlook.com",
 			method: "POST",
 			data: $(this).serialize(), 
-			datatype: "json";
+			datatype: "json"
 
 		});
 
