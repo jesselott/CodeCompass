@@ -13,30 +13,30 @@ $(document).ready(function(){
 	});
 });
 
-$('#contact-form').submit(function(e){
+// $('#contact-form').submit(function(e){
 
-	var name = document.getElementById('yourName').value,
-	email = document.getElementById('email').value,
-	message = document.getElementById('msg').value;
+// 	var name = document.getElementById('yourName').value,
+// 	email = document.getElementById('email').value,
+// 	message = document.getElementById('msg').value;
 
-	if (name.value === null || email.value === null || message.value === null)  
-		alert('Please check your entries');
+// 	if (name.value === null || email.value === null || message.value === null)  
+// 		alert('Please check your entries');
 	
-	else {
+// 	else {
 
-		$.ajax({
-			url: "https://formspree.io/jesse.e.lott@outlook.com",
-			method: "POST",
-			data: $(this).serialize(), 
-			datatype: "json"
+// 		$.ajax({
+// 			url: "https://formspree.io/jesse.e.lott@outlook.com",
+// 			method: "POST",
+// 			data: {$(this).serialize()}, 
+// 			datatype: "json"
 
-		});
+// 		});
 
-		e.preventDefault();
-		$("#contact-form").trigger("reset");
-		alert('Message Sent');
-	}
+// 		e.preventDefault();
+// 		$("#contact-form").trigger("reset");
+// 		alert('Message Sent');
+// 	}
 
-});
+// });
 
 
