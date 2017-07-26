@@ -15,11 +15,11 @@ $(document).ready(function(){
 
 $('#contact-form').submit(function(e){
 
-	var name = document.getElementById('yourName'),
-	email = document.getElementById('email'),
-	message = document.getElementById('msg');
+	var name = document.getElementById('yourName').value,
+	email = document.getElementById('email').value,
+	message = document.getElementById('msg').value;
 
-	if (!name.value || !email.value || !message.value)  
+	if (name.value === null || email.value === null || message.value === null)  
 		alert('Please check your entries');
 	
 	else {
