@@ -17,7 +17,7 @@ div #container {
 .input-group-addon {
     min-width:10em;
     text-align:left;
-    
+
 }
 
 
@@ -218,6 +218,7 @@ input, textarea {
 	padding: 25px;
 	background-position: 50% 75%;
 	background-repeat: no-repeat;
+	background-color: #81613E;
 	border-radius: 20px;
 	color: black;
 	
