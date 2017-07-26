@@ -39,4 +39,18 @@ $(document).ready(function(){
 
 // });
 
+var message = "";
+
+$("#sendMessage").on("click", function() {
+    message = $("#contact-form").serialize();
+    $.ajax({
+        url: "//formspree.io/jesse.e.lott@outlook.com", 
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
+    alert('I will contact you as soon as I can.  Have a great day!');
+    return false;
+});
+
 

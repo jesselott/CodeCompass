@@ -268,16 +268,27 @@
 
 		<h2><a><i class="fa fa-envelope" id="contact" aria-hidden="true"></i> Send Me a Message!</a></h2>
 		<div id="contact-form">
-			<form action="https://formspree.io/jesse.e.lott@outlook.com"
-      method="POST">
-				
-					<label for="yourName">Your Name </label><br>
-					<input type="text" name="yourName" id="yourName" placeholder="1SG Hauser"><br>
-					<label for="email">Your Email</label><br>
-					<input type="email" name="_replyto" id="email" placeholder="Duke@yojoe.gi.mil"><br>
-					<label for="msg">Message</label><br>
-					<textarea name="msg" id="msg" rows="5" cols="30" maxlength="25" placeholder="Your Message Goes Here"></textarea>
-					<input type="submit" value="Send" name="email-btn" class="btn btn-primary btn-lg">
+			<form class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">Your Name </span>
+					<input name="form-name-input" class="form-control" name="name" type="text" required>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">Your Email</span>
+					<input name="form-email-input" type="email" name="_replyto" class="form-control" required>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">   Subject   </span>
+					<input name="form-subject-input" type="text" name="subject" class="form-control">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">   Message   </span>
+					<textarea name="form-message-input" type="text" name="message" class="form-control" rows="5" cols="50" required></textarea>
+				</div>
+				<div>
+					<input type="text" name="_gotcha" style="display:none" />
+					<button id="sendMessage" class="btn btn-lg btn-primary">Send</button>
+				</div>
 					
 				
 			</form>
@@ -293,7 +304,6 @@
 </div>
 <!-- JavaScript -->
 <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/
 <script type="text/javascript" src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/myjs.js"></script>
 
