@@ -20,7 +20,7 @@ $('#contact-form').submit(function(e){
 	message = document.getElementById('msg');
 
 	if (!name.value || !email.value || !message.value)  
-		alertify.error('Please check your entries');
+		alert('Please check your entries');
 	
 	else {
 
@@ -34,7 +34,7 @@ $('#contact-form').submit(function(e){
 
 		e.preventDefault();
 		$("#contact-form").trigger("reset");
-		alertify.success('Message Sent');
+		alert('Message Sent');
 	}
 
 });
