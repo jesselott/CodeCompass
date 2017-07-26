@@ -33,7 +33,7 @@ $('#contact-form').submit(function(e){
 		});
 
 		e.preventDefault();
-		$(this)[0].reset();
+		$("#contact-form").trigger("reset");
 		alertify.success('Message Sent');
 	}
 
