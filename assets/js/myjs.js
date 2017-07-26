@@ -39,18 +39,40 @@ $(document).ready(function(){
 
 // });
 
-var message = "";
+// var message = "";
 
-$("#sendMessage").on("click", function() {
-    message = $("#contact-form").serialize();
-    $.ajax({
-        url: "//formspree.io/jesse.e.lott@outlook.com", 
-        method: "POST",
-        data: {message: message},
-        dataType: "json"
-    });
-    alert('I will contact you as soon as I can.  Have a great day!');
-    return false;
+// $("#sendMessage").on("click", function() {
+//     message = $("#contact-form").serialize();
+//     $.ajax({
+//         url: "//formspree.io/jesse.e.lott@outlook.com", 
+//         method: "POST",
+//         data: {message: message},
+//         dataType: "json"
+//     });
+//     alert('I will contact you as soon as I can.  Have a great day!');
+//     return false;
+// });
+
+var $contactForm = $('#contact-form');
+$contactForm.submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: '//formspree.io/jesse.e.lott@outlook.com',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		beforeSend: function() {
+			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+		},
+		success: function(data) {
+			$contactForm.find('.alert--loading').hide();
+			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+		},
+		error: function(err) {
+			$contactForm.find('.alert--loading').hide();
+			$contactForm.append('<div class="alert alert--error">Oops, there was an error.</div>');
+		}
+	});
 });
 
 
